@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family={{fontName}}');
+@font-face {
+  font-family: "Pixellari";
+  src: url("https://s3.us-east-2.amazonaws.com/streamlabs-designers/azure/1511910508Pixellari.ttf");
+}
+html,body{
+		margin: 0;
+		padding: 0;
+		color: #FFF;
+
+	}
+	#main {
+		width:428px;
+		height:	130px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	#inner {
+		width:412px;
+		height:	109px;
+		position: absolute;
+		top: 0;
+		left: 8px;
+
+	}
+	#bars {
+		width: 376px;
+		height: 10px;
+		position: absolute;
+		left: 201px;
+		top: 98px;
+		transform: translateX(-50%);
+        filter:hue-rotate({{hue}}deg);
+	}
+	.bar {
+		position: absolute;
+		top: 10px;
+		left: 0;
+	}
+	#barCont {
+		width: 0;
+		height: 33px;
+		position: absolute;
+		overflow: hidden;
+		top: 0;
+		left: 0;
+    transition: all 1s ease;
+	}
+	#filledBar {
+		z-index: 9;
+	}
+  #bars2 {
+		width: 376px;
+		height: 10px;
+		position: absolute;
+		left: 201px;
+		top: 148px;
+		transform: translateX(-50%);
+    	filter:hue-rotate({{hue}}deg);
+	}
+	.bar2 {
+		position: absolute;
+		top: 10px;
+		left: 0;
+	}
+	#barCont2 {
+		width: 0;
+		height: 33px;
+		position: absolute;
+		overflow: hidden;
+		top: 0;
+		left: 0;
+    transition: all 1s ease;
+	}
+	#filledBar2 {
+		z-index: 9;
+	}
+	#bgBar {
+		z-index: 1;
+	}
+  #bgBar {
+		z-index: 1;
+	}
+	#title, #current, #follower, #total, #totalfollowers, #user_pic, #goal-end-date {
+		position: absolute;
+	}
+
+	#title {
+	padding: 50;	
+	left: {{textho}}px;
+    width: 500px;
+	top: {{texthe}}px;
+    filter:drop-shadow(8px 8px 8px black);
+    font-family:{{fontName}};
+    color:{{fontColor}};
+ 	font-weight:{{fontWeight}};
+ 	font-size:{{fontSize}}px;
+    background: linear-gradient(45deg, {{fontColor3}}, {{fontColor2}}, {{fontColor}}, {{fontColor2}}, {{fontColor3}});
+  	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    animation: Gradient 3s ease infinite;
+	}
+	#current, #followers, #total, #totalfollowers, #user_pic, #goal-end-date, #current2 {
+		bottom: 4px;
+	}
+	#current {
+    left: 12px;
+    top: 80px;
+    width: 300px;
+    font-family:{{fontName}};
+    font-weight:{{fontWeight}};
+    font-size: 25px;
+	}
+  #follower {
+    font-family:{{fontName}};
+    font-weight:{{fontWeight}};
+    left: 13px;
+    top: 130px;
+    width: 300px;
+    font-size: 25px;
+	}
+	#total {
+    font-family:{{fontName}};
+      font-weight:{{fontWeight}};
+    left: 170px;
+    top: 80px;
+    width: 300px;
+    font-size: 25px;
+	}
+  #totalfollowers {
+    left: 170px;
+    top: 130px;
+    width: 300px;
+    font-family:{{fontName}};
+    font-weight:{{fontWeight}};
+    font-size: 25px;
+	}
+  #user_pic {
+    text-align: center;
+		left: 15px;
+		top: 5px;
+    width: 70px;
+    height: 70px;
+    z-index: 6;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+#vid {
+      z-index: 9999;
+      position: absolute;
+      width:540px;
+	  height:200px;
+  	  left: 0px;
+      top: 0;
+      display: none;
+ }
+@keyframes Gradient {
+	0%,100% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+}
